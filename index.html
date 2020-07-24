@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unicorns!</title>
+</head>
+<body>
+    <button id="btnRainbow" onclick="show_unicorns()">Click Me!</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="images" style="display: none;">
+        <img src="rainbow_2.gif" alt="Rainbows!">
+        <br><br>
+        <img src="unicorn_1.gif" alt="Unicorns!">
+    </div>
+</body>
+<script>
+    function show_unicorns() {
+        var currentDisplay = document.getElementById("images").style.display;
+        if (currentDisplay == "none") {
+            document.getElementById("images").style.display = "block";
+        } else {
+            document.getElementById("images").style.display = "none";
+        }
+    }
+</script>
+</html>
